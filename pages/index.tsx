@@ -1,15 +1,15 @@
 /** @jsxImportSource @emotion/react */
-import type { NextPage } from "next";
-import Head from "next/head";
-import { css, useTheme } from "@emotion/react";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { css, useTheme } from '@emotion/react'
 
 const Home: NextPage = () => {
-  const theme = useTheme();
+  const theme = useTheme()
 
   const title = (theme: any) =>
     css`
       color: ${theme.color.gray300};
-    `;
+    `
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <h1 css={title(theme)}>Hi Jihyoun</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
